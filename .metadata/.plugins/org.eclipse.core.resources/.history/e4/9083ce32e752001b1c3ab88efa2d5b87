@@ -1,0 +1,22 @@
+package com.devsuperior.dsdeliver.entities;
+
+import java.time.Instant;
+import java.util.HashSet;
+import java.util.Set;
+
+public class Order {
+
+	private Long id;
+	private String address;
+	private Double latitude;
+	private Double longitude;
+	private Instant moment;
+	private OrderStatus status;
+	
+	// Set usado em vez de List - para nao ter repicao de pedido.  Cria no banco a relação de muitos p muitos.
+	//private Set<Product> products;
+	private Set<Product> products = new HashSet<>();
+	
+	public Order() {	
+}
+	
