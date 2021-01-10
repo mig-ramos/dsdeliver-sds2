@@ -1,0 +1,20 @@
+package com.devsuperior.dsdeliver.services;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.devsuperior.dsdeliver.dto.ProductDTO;
+
+//Este componente registrado atraves do @Componet ou @Service
+@Service
+public class ProductService {
+	
+	private ProductRepository repository;
+	
+	public ProductService();
+
+	public List<ProductDTO> findAll(){
+		
+	}
+}
